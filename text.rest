@@ -19,4 +19,4 @@ content-type: application/json
 }
 
 ###
-DELETE http://localhost:3000/api/genres/2
+DELETE http://localhost:3000/api/genres/4
