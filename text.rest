@@ -2,16 +2,20 @@ GET http://localhost:3000/api/genres
 
 ###
 
+GET http://localhost:3000/api/genres/6118c78d036a7b13e02fc80b
+
+###
+
 POST http://localhost:3000/api/genres/
 content-type: application/json
 
 {
-    "name": "comedy"
+    "name": "comdey"
 }
 
 ###
 
-PUT http://localhost:3000/api/genres/4
+PUT http://localhost:3000/api/genres/6118c8328ba57f543c910767
 content-type: application/json
 
 {
@@ -19,4 +23,4 @@ content-type: application/json
 }
 
 ###
-DELETE http://localhost:3000/api/genres/4
+DELETE http://localhost:3000/api/genres/6118c8328ba57f543c910767
