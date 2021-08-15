@@ -95,4 +95,37 @@ content-type: application/json
 }
 
 ###
-DELETE http://localhost:3000/api/movies/6119252e6ad59d6df4ffcfb7
+DELETE http://localhost:3000/api/movies/6119252e6ad59d6df4ffcfb7 
+
+### Rental
+
+GET http://localhost:3000/api/rentals
+
+###
+
+GET http://localhost:3000/api/rentals/611924a884ccb40654414aa8
+
+###
+
+POST http://localhost:3000/api/rentals/
+content-type: application/json
+
+{
+    "customerId": "6118d36a64d7b87814ddfa84",
+    "movieId": "611927a83f632551e4866848"
+}
+
+###
+
+PUT http://localhost:3000/api/rentals/611924a884ccb40654414aa8
+content-type: application/json
+
+{
+    "title": "Terimator 2",
+    "genreId": "6118c76f036a7b13e02fc805",
+    "numberInStock": "2",
+    "dailyRentalRate": "5"
+}
+
+###
+DELETE http://localhost:3000/api/rentals/6119252e6ad59d6df4ffcfb7
