@@ -76,9 +76,9 @@ POST http://localhost:3000/api/movies/
 content-type: application/json
 
 {
-    "title": "Terimator",
-    "genreId": "6118c76f036a7b13e02fc805",
-    "numberInStock": "2",
+    "title": "Mirror",
+    "genreId": "6118c77b036a7b13e02fc807",
+    "numberInStock": "10",
     "dailyRentalRate": "5"
 }
 
@@ -111,8 +111,8 @@ POST http://localhost:3000/api/rentals/
 content-type: application/json
 
 {
-    "customerId": "6118d36a64d7b87814ddfa84",
-    "movieId": "611927a83f632551e4866848"
+    "customerId": "61194f165821be1df4185baa",
+    "movieId": "61194ef35821be1df4185ba6"
 }
 
 ###
