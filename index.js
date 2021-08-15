@@ -8,7 +8,7 @@ app.use(express.json())
 const genres = [
     {id: 1, name: "Action"},
     {id: 2, name: "Horror"},
-    {id: 3, name: "Romanc"}
+    {id: 3, name: "Romance"}
 ]
 
 app.get("/api/genres",(req,res)=>{
@@ -35,7 +35,7 @@ app.post("/api/genres",(req,res)=>{
 })
 
 app.put('/api/genres/:id', (req,res)=>{
-    const genre = genres.find(i= i.id === parseInt(req.params.id));
+    const genre = genres.find(i=> i.id === parseInt(req.params.id));
     if(!genre) return res.status(404).send("The genre with the given ID is not found")
     
     const {error} = validateGenre(req.body);
@@ -46,7 +46,7 @@ app.put('/api/genres/:id', (req,res)=>{
 })
 
 app.delete("/api/genres/:id", (req,res)=>{
-    const genre = genres.find(c => c.id === parseInt(req.body.params));
+    const genre = genres.find(i=> i.id === parseInt(req.params.id));
     if(!genre) return res.status(404).send("The genre with the given ID is not found")
 
     const index = genres.indexOf(genre);
@@ -56,11 +56,11 @@ app.delete("/api/genres/:id", (req,res)=>{
 })
 
 function validateGenre(genre){
-    const schema = {
+    const schema = Joi.object({
         name: Joi.string().min(3).required()
-    };
+    });
 
-    return Joi.validate(genre,schema);
+    return schema.validate(genre)
 }
 
 app.listen(3000,()=> console.log("Listening in http://localhost:3000/api/genres"))
