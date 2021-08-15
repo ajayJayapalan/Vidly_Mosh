@@ -24,3 +24,36 @@ content-type: application/json
 
 ###
 DELETE http://localhost:3000/api/genres/6118c8328ba57f543c910767
+
+###
+
+GET http://localhost:3000/api/customers
+
+###
+
+GET http://localhost:3000/api/customers/6118d37b64d7b87814ddfa86
+
+###
+
+POST http://localhost:3000/api/customers/
+content-type: application/json
+
+{
+    "name": "Amal",
+    "isGold": false,
+    "phone": "32345"
+}
+
+###
+
+PUT http://localhost:3000/api/customers/6118d37b64d7b87814ddfa86
+content-type: application/json
+
+{
+    "name": "Ajay",
+    "isGold": false,
+    "phone": "32345"
+}
+
+###
+DELETE http://localhost:3000/api/customers/6118d37b64d7b87814ddfa86
