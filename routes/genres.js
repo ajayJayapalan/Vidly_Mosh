@@ -1,17 +1,7 @@
+const {Genre, validateGenre} = require("../models/genres")
 const express = require("express");
-const mongoose = require("mongoose");
-const Joi = require("joi");
 const router = express.Router();
 
-const genreSchema = mongoose.Schema({
-  name: {
-    type: String,
-    minlength: 3,
-    required: true,
-  },
-});
-
-const Genre = mongoose.model("Genre", genreSchema);
 
 router.get("/", (req, res) => {
   Genre.find().then((genres) => res.send(genres));
@@ -58,13 +48,5 @@ router.delete("/:id", async (req, res) => {
     return res.status(404).send("The genre with the given ID is not found");
   res.send(genre);
 });
-
-function validateGenre(genre) {
-  const schema = Joi.object({
-    name: Joi.string().min(3).required(),
-  });
-
-  return schema.validate(genre);
-}
 
 module.exports = router;

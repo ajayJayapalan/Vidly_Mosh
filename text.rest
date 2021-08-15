@@ -56,4 +56,4 @@ content-type: application/json
 }
 
 ###
-DELETE http://localhost:3000/api/customers/6118d37b64d7b87814ddfa86
+DELETE http://localhost:3000/api/customers/6118d88bf84588794c18a123
