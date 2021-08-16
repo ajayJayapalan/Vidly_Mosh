@@ -142,7 +142,25 @@ POST http://localhost:3000/api/users/
 content-type: application/json
 
 {
-    "name": "Arya",
-    "email": "arya@gmail.com",
+    "name": "Beena",
+    "email": "beena@gmail.com",
+    "password": "12345"
+}
+
+
+
+### Auth
+
+
+GET http://localhost:3000/api/users
+
+
+###
+
+POST http://localhost:3000/api/auth/
+content-type: application/json
+
+{
+    "email": "beena@gmail.com",
     "password": "12345"
 }
