@@ -25,7 +25,7 @@ content-type: application/json
 }
 
 ###
-DELETE http://localhost:3000/api/genres/6118c8328ba57f543c910767
+DELETE http://localhost:3000/api/genres/6118c782036a7b13e02fc809
 
 ###
 
@@ -133,7 +133,7 @@ DELETE http://localhost:3000/api/rentals/6119252e6ad59d6df4ffcfb7
 ### User
 
 
-GET http://localhost:3000/api/users
+GET http://localhost:3000/api/users/me
 
 
 ###
@@ -142,9 +142,9 @@ POST http://localhost:3000/api/users/
 content-type: application/json
 
 {
-    "name": "Beena",
-    "email": "beena@gmail.com",
-    "password": "12345"
+    "name": "Anjali",
+    "email": "anjali1@gmail.com",
+    "password": "12345",
 }
 
 
@@ -152,7 +152,7 @@ content-type: application/json
 ### Auth
 
 
-GET http://localhost:3000/api/users
+GET http://localhost:3000/api/auth
 
 
 ###

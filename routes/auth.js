@@ -1,4 +1,5 @@
 const { User } = require("../models/users");
+const jwt = require("jsonwebtoken");
 const Joi = require("joi");
 const express = require("express");
 const router = express.Router();
@@ -16,8 +17,8 @@ router.post("/", async (req, res) => {
     userOne.password
   ); // return true if password match
   if (!validPassword) return res.status(400).send("Invalid email or password");
-
-  res.send(true);
+  const token = userOne.generateAuthToken();
+  res.send(token);
 });
 
 function validateUser(user) {
