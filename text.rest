@@ -4,7 +4,7 @@ GET http://localhost:3000/api/genres
 
 ###
 
-GET http://localhost:3000/api/genres/6118c78d036a7b13e02fc80b
+GET http://localhost:3000/api/genres/6118c76f036a7b13e02fc805
 
 ###
 
@@ -12,7 +12,7 @@ POST http://localhost:3000/api/genres/
 content-type: application/json
 
 {
-    "name": "comdey"
+    "name": "Sci-fi"
 }
 
 ###
