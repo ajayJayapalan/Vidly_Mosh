@@ -12,7 +12,7 @@ POST http://localhost:3000/api/genres/
 content-type: application/json
 
 {
-    "name": "Sci-fi"
+    "name": "Anthology"
 }
 
 ###
@@ -43,14 +43,14 @@ POST http://localhost:3000/api/customers/
 content-type: application/json
 
 {
-    "name": "Amal",
+    "name": "arun",
     "isGold": false,
     "phone": "32345"
 }
 
 ###
 
-PUT http://localhost:3000/api/customers/6118d37b64d7b87814ddfa86
+PUT http://localhost:3000/api/customers/611a78e988bad2b37cfcdcc0
 content-type: application/json
 
 {
@@ -60,7 +60,7 @@ content-type: application/json
 }
 
 ###
-DELETE http://localhost:3000/api/customers/6118d88bf84588794c18a123
+DELETE http://localhost:3000/api/customers/611a78e988bad2b37cfcdcc0
 
 ### Movie
 
@@ -68,7 +68,7 @@ GET http://localhost:3000/api/movies
 
 ###
 
-GET http://localhost:3000/api/movies/611924a884ccb40654414aa8
+GET http://localhost:3000/api/movies/61194ef35821be1df4185ba6
 
 ###
 
@@ -84,12 +84,12 @@ content-type: application/json
 
 ###
 
-PUT http://localhost:3000/api/movies/611924a884ccb40654414aa8
+PUT http://localhost:3000/api/movies/611a793e88bad2b37cfcdcd3
 content-type: application/json
 
 {
     "title": "Terimator 2",
-    "genreId": "6118c76f036a7b13e02fc805",
+    "genreId": "6118c77b036a7b13e02fc807",
     "numberInStock": "2",
     "dailyRentalRate": "5"
 }
