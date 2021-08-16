@@ -129,3 +129,20 @@ content-type: application/json
 
 ###
 DELETE http://localhost:3000/api/rentals/6119252e6ad59d6df4ffcfb7
+
+### User
+
+
+GET http://localhost:3000/api/users
+
+
+###
+
+POST http://localhost:3000/api/users/
+content-type: application/json
+
+{
+    "name": "Arya",
+    "email": "arya@gmail.com",
+    "password": "12345"
+}
