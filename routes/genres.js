@@ -10,11 +10,14 @@ router.get("/" ,(req, res) => {
   Genre.find().then((genres) => res.send(genres));
 });
 
-router.get("/:id", async (req, res) => {
-  const genre = await Genre.findById(req.params.id);
+router.get("/:id", async (req, res,next) => {
+  try{const genre = await Genre.findById(req.params.id);
   if (!genre)
     return res.status(404).send("The genre with the given ID is not found");
-  res.send(genre);
+  res.send(genre);}
+  catch(err){
+      next(err)
+  }
 });
 
 router.post("/", auth, async (req, res) => {
