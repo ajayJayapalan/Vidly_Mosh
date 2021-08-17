@@ -134,7 +134,7 @@ DELETE http://localhost:3000/api/rentals/6119252e6ad59d6df4ffcfb7
 
 
 GET http://localhost:3000/api/users/me
-
+x-auth-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTE5ZDdiZjU3MzJlMzQwOTBhODZkZDEiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MjkyMTQ2NDJ9.rnBVzSHLi4hK_L7u0hHxJ9xqZlv4p5kq5UUxB4lt0Pc
 
 ###
 
@@ -142,8 +142,8 @@ POST http://localhost:3000/api/users/
 content-type: application/json
 
 {
-    "name": "Anjali",
-    "email": "anjali1@gmail.com",
+    "name": "Anjalsi",
+    "email": "anjali11@gmail.com",
     "password": "12345",
 }
 
@@ -152,7 +152,7 @@ content-type: application/json
 ### Auth
 
 
-GET http://localhost:3000/api/auth
+#GET http://localhost:3000/api/auth
 
 
 ###

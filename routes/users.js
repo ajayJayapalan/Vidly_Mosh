@@ -6,6 +6,7 @@ const _ = require("lodash");
 const bcrypt = require("bcrypt");
 const auth = require("../middleware/auth");
 
+
 router.get("/me", auth, async (req, res) => {
   const id = req.user._id;
   User.findById(id)
@@ -14,6 +15,7 @@ router.get("/me", auth, async (req, res) => {
 });
 
 router.post("/", async (req, res) => {
+  console.log("hi")
   const { error } = validateUser(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
