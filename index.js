@@ -8,4 +8,6 @@ require("./startup/db")();
 require("./startup/config")();
 require("./startup/validation")();
 
-app.listen(3000, () => console.log("Listening in http://localhost:3000/api/"));
+const server = app.listen(3000, () => console.log("Listening in http://localhost:3000/api/"));
+
+module.exports = server;
