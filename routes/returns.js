@@ -7,24 +7,15 @@ const validate = require("../middleware/validator");
 const { Rental } = require("../models/rental");
 const { Movie } = require("../models/movies");
 
-router.post("/", [auth, /* validate(validateReturn) */], async (req, res) => {
-  const { error } = validateReturn(req.body);
-  if (error) return res.status(400).send(error.details[0].message);
-//   const { customerId, movieId } = req.body;
-//   if (!customerId) return res.status(400).send("Invalid customerId");
-//   if (!movieId) return res.status(400).send("Invalid movieId");
+router.post("/", [auth, validate(validateReturn)], async (req, res) => {
+  const rental = await Rental.lookup(req.body.customerId, req.body.movieId);
 
-  const rental = await Rental.findOne({
-    "customer._id": req.body.customerId,
-    "movie._id": req.body.movieId,
-  });
+  console.log(rental);
   if (!rental) return res.status(404).send("no rental found");
   if (rental.dateReturned)
     return res.status(400).send("Return already processed.");
 
-  rental.dateReturned = new Date();
-  const rentalDays = moment().diff(rental.dateOut, "days");
-  rental.rentalFee = rentalDays * rental.movie.dailyRentalRate;
+  rental.return();
 
   await Movie.update(
     { _id: rental.movie._id },
@@ -34,7 +25,7 @@ router.post("/", [auth, /* validate(validateReturn) */], async (req, res) => {
   );
   await rental.save();
 
-  return res.status(200).send(rental);
+  return res.send(rental);
 });
 
 function validateReturn(ret) {

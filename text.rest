@@ -164,3 +164,15 @@ content-type: application/json
     "email": "beena@gmail.com",
     "password": "12345"
 }
+
+### returns
+
+
+POST http://localhost:3000/api/returns
+content-type: application/json
+
+
+{
+    "movieId": "611927a83f632551e4866848",
+    "customerId": "61194f165821be1df4185baa"
+}
