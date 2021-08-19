@@ -1,0 +1,6 @@
+{
+    "jwtPrivateKey": "vidly_jwtPrivateKey",
+    "db": "mongodb+srv://jaymon123:jaymon123@mosh-node-vidly.vdk5c.mongodb.net/vidly?retryWrites=true&w=majority",
+    "PORT":"5000"
+  }
+  

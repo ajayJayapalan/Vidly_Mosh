@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const config = require("config");
 
 require("dotenv").config();
 require("./startup/logging")();
@@ -9,6 +10,9 @@ require("./startup/config")();
 require("./startup/validation")();
 require("./startup/prod")(app);
 
-const server = app.listen(3000, () => console.log("Listening in http://localhost:3000/api/"));
+const PORT = config.get("PORT") || 3000;
+const server = app.listen(PORT, () =>
+  console.log(`Listening in http://localhost:${PORT}/api/`)
+);
 
 module.exports = server;

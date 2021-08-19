@@ -1,0 +1,61 @@
+[
+  {
+    "_id": "6119cba8991bd5a5fc75ecc3",
+    "name": "Ajay",
+    "email": "ajay@gmail.com",
+    "password": "61194ef35821be1df4185ba6",
+    "__v": 0,
+    "isAdmin": true
+  },
+  {
+    "_id": "6119cebd90e7c287fcc40fea",
+    "name": "Amal",
+    "email": "amal@gmail.com",
+    "password": "12345",
+    "__v": 0,
+    "isAdmin": true
+  },
+  {
+    "_id": "6119d22b831c4093cc7684b1",
+    "name": "Arya",
+    "email": "arya@gmail.com",
+    "password": "12345",
+    "__v": 0
+  },
+  {
+    "_id": "6119d7bf5732e34090a86dd1",
+    "name": "Beena",
+    "email": "beena@gmail.com",
+    "password": "$2b$10$PrjMj/XXavF6hjDR1i7EM.SEYcqZVkZ3Cg7/OiJNTmumqKIGGDeN.",
+    "__v": 0,
+    "isAdmin": true
+  },
+  {
+    "_id": "611a0639a784c38cc098a451",
+    "name": "Jayapalan",
+    "email": "jayapalan@gmail.com",
+    "password": "$2b$10$tDTpP6wXkjjoLIIQMku0kO2rLj6c2kdZAWF2GUMGXCxObBSfREiQu",
+    "__v": 0
+  },
+  {
+    "_id": "611a0b097f691882a041a4ce",
+    "name": "Vinod",
+    "email": "vinod@gmail.com",
+    "password": "$2b$10$LB8ZqBMzxRoEgf8ziQZB0uJtvDRl7Qrp02MIj5HuzGsuehlOQ/i3.",
+    "__v": 0
+  },
+  {
+    "_id": "611a15305613ed8a9cfdd180",
+    "name": "Anjali",
+    "email": "anjali@gmail.com",
+    "password": "$2b$10$Sr5hAqPqr1jeP7S4higZye/bbSs0UxhkQplL.fiHs2BgAy/K8MKam",
+    "__v": 0
+  },
+  {
+    "_id": "611a245ab06c135cc4206ab1",
+    "name": "Anjali",
+    "email": "anjali1@gmail.com",
+    "password": "$2b$10$rI7MLavdqJFVWj0QtWQqZuka5aMcNLuKywjj7r9L.us7lhWDaJNHG",
+    "__v": 0
+  }
+]

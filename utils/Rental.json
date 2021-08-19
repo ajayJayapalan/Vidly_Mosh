@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "6119450df19180802c4014d2",
+    "customer": {
+      "isGold": false,
+      "_id": "6118d36a64d7b87814ddfa84",
+      "name": "Anoop",
+      "phone": "12345"
+    },
+    "movie": { "_id": "6118d36a64d7b87814ddfa84" },
+    "dateOut": "2021-08-15T16:47:09.338Z"
+  },
+  {
+    "_id": "61194f3b5821be1df4185baf",
+    "customer": {
+      "isGold": false,
+      "_id": "61194f165821be1df4185baa",
+      "name": "Amal",
+      "phone": "32345"
+    },
+    "movie": { "_id": "61194f165821be1df4185baa" },
+    "dateOut": "2021-08-15T17:30:35.838Z"
+  }
+]

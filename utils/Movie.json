@@ -1,0 +1,50 @@
+[
+  {
+    "numberInStock": 2,
+    "_id": "611924a884ccb40654414aa8",
+    "title": "Terimator 2",
+    "genre": { "_id": "6118c76f036a7b13e02fc805", "name": "Adventure" },
+    "dailyRentalRate": 5,
+    "__v": 0
+  },
+  {
+    "numberInStock": 6,
+    "_id": "611927a83f632551e4866848",
+    "title": "Terimator",
+    "genre": { "_id": "6118c76f036a7b13e02fc805", "name": "Adventure" },
+    "dailyRentalRate": 5,
+    "__v": 0
+  },
+  {
+    "numberInStock": 10,
+    "_id": "61194ed55821be1df4185ba2",
+    "title": "Quite Place",
+    "genre": { "_id": "6118c77b036a7b13e02fc807", "name": "Horror" },
+    "dailyRentalRate": 5,
+    "__v": 0
+  },
+  {
+    "numberInStock": 9,
+    "_id": "61194ef35821be1df4185ba6",
+    "title": "Mirror",
+    "genre": { "_id": "6118c77b036a7b13e02fc807", "name": "Horror" },
+    "dailyRentalRate": 5,
+    "__v": 0
+  },
+  {
+    "numberInStock": 10,
+    "_id": "611a791888bad2b37cfcdccc",
+    "title": "Mirror",
+    "genre": { "_id": "6118c77b036a7b13e02fc807", "name": "Horror" },
+    "dailyRentalRate": 5,
+    "__v": 0
+  },
+  {
+    "numberInStock": 2,
+    "_id": "611a793e88bad2b37cfcdcd3",
+    "title": "Terimator 2",
+    "genre": { "_id": "6118c77b036a7b13e02fc807", "name": "Horror" },
+    "dailyRentalRate": 5,
+    "__v": 0
+  }
+]
